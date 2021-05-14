@@ -153,17 +153,4 @@ def makeISPL(gamename):
         f.write("player_" + str(n))
 
     f.write("};\nend Groups\n\nFormulae\n    <players>F won;\nend Formulae")
-
-    
-
-
-if __name__ == "__main__":
-    from games import Games
-
-    if len(sys.argv) > 1:
-        Game = Games[int(sys.argv[1])]
-    else:
-        Game = Games[0]
-
-    makeISPL(Game.name)
     
