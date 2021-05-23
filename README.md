@@ -10,6 +10,8 @@ The tool uses a the parts from our strategy synthesiser tool found at https://gi
 Another requirement is regarding the filemanagement, as the tool expects there to be a directory called 'pictures' in the same folder as the tool, and that this directory contains subfolder named after each game to be converted.
 
 ## Tutorial
-To run the program, first download the tool found at https://github.com/VAkerJ/strategysynthesiser_2 and place it in the same folder as ISPLconverter.py. Then call the ISPLconverter.py script with the input parameter being the name of the subfolder containing the game to be converted.
+To run the program, first download the tool found at https://github.com/VAkerJ/strategysynthesiser_2 and place it in the same folder as ISPLconverter.py. Then call the ISPLconverter.py script with the input parameter being the name of the subfolder containing the game to be converted. From the terminal, this may be done as
+`python3 ISPLconverter.py chemical`
 
 As in, if the folder system has a path called 'pictures\chemical\' which contains the game after it's been expanded by Helmer and Nylens tool. The ISPLconverter.py function makeISPL() should be called as makeISPL('chemical')
+
