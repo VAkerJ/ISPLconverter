@@ -154,3 +154,11 @@ def makeISPL(gamename):
 
     f.write("};\nend Groups\n\nFormulae\n    <players>F won;\nend Formulae")
     
+if __name__ == "__main__":
+
+    if len(sys.argv) > 1:
+        name = str(sys.argv[1])
+    try:
+        makeISPL(name)
+    except TypeError as e:
+        print(e)
